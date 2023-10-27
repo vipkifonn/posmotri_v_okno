@@ -53,7 +53,7 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 30px;
   width: 100%;
   padding: 133px 30px;
@@ -294,11 +294,6 @@ ol {
   margin-bottom: 1px;
 }
 
-.more-button-template {
-  position: fixed;
-
-}
-
 .search-form__pseudo-checkbox {
   position: relative;
   width: 19px;
@@ -306,14 +301,9 @@ ol {
   border: 1px solid white;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  background-image: url(../images/Rectangle\ 25.svg);
+  background-repeat: no-repeat;
   background-position: center;
 } 
 
